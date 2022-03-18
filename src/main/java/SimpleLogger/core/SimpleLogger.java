@@ -8,6 +8,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Simple logger for Java
+ * @author Marck C. Guzmán
+ * @see SimpleLogger.interfaces.Logger
+ * @version 0.1.0
+ */
 public class SimpleLogger extends BasicLogger{
     public SimpleLogger(PrintStream output, String name) {
         super(output, name);
@@ -244,6 +250,7 @@ public class SimpleLogger extends BasicLogger{
         String label = preprocess(getFormat(), basic);
         write(label);
     }
+
 
     @Override
     public void verbose(Object msg) {
